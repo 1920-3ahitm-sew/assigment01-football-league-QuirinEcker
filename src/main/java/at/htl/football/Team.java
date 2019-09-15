@@ -34,17 +34,12 @@ public class Team implements Comparable<Team> {
             this.goalsShot += guestGoals;
             this.goalsReceived += homeGoals;
 
-            System.out.println(guestGoals + ":" + homeGoals);
-
             if (guestGoals > homeGoals) {
                 this.wins++;
-                System.out.println("win");
             } else if (guestGoals < homeGoals) {
                 this.defeats++;
-                System.out.println("lose");
             } else {
                 this.draws++;
-                System.out.println("draw");
             }
         }
 
